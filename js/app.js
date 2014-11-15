@@ -21,4 +21,11 @@ angular.module('AddressBook', [])
         $scope.sortBy = function (colName) {
             $scope.sortCol = colName;
         }
+        $scope.isSortedBy = function (colName) {
+            if($scope.sortCol == colName) {
+                return true;
+            } else {
+                return false;
+            }
+        }
     });
